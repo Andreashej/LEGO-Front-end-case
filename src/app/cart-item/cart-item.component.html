@@ -1,0 +1,23 @@
+<li class="list-group-item">
+  <div class="row">
+    <div class="col-2 px-0">
+      <img class="w-100" src="https://via.placeholder.com/125">
+    </div>
+    <div class="col-6">
+      <h4 class="mb-0">{{ product.name }} <button class="delete" (click)="shoppinglist.removeProduct(product)"><i class="fa fa-trash"></i></button></h4>
+      <small class="text-muted">{{ product.SKU }}</small>
+      <p class="mb-0">
+        {{ product.description }}
+      </p>
+    </div>
+    <div class="col-4 text-right">
+      <h3 class="price mb-0">{{ product.currency }} {{ product.getTotalPrice() }}</h3>
+      <small class="text-muted">{{ product.currency }} {{ product.price }} per pcs</small>
+      <div class="text-right mt-2 qty-controls">
+        <button class="btn btn-outline-danger btn-sm" [class.disabled]="product.qty == 1" (click)="product.remove()"><i class="fa fa-minus"></i></button>
+        <input class="form-control qty mx-2 text-right" type="text" [(ngModel)]="product.qty" size="3">
+        <button class="btn btn-outline-success btn-sm" (click)="product.add()"><i class="fa fa-plus"></i></button>
+      </div>
+    </div>
+  </div>
+</li>

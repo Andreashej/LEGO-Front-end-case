@@ -1,0 +1,18 @@
+<div class="card">
+  <img class="card-img-top" src="https://via.placeholder.com/400x250">
+  <div class="card-body">
+    <h6 class="card-title">{{ product.name }}</h6>
+    <p class="card-text">
+      {{ product.description }}
+    </p>
+    <div class="row">
+      <div class="col">
+        <h4>{{ product.currency }} {{ product.price }}</h4>
+      </div>
+      <div class="col text-right">
+        <button *ngIf="!this.shoppinglist.isInCart(product); else addedText"  class="btn btn-success rounded-pill" (click)="addToCart()">Add to cart</button>
+        <ng-template #addedText><span class="btn btn-success disabled rounded-pill">Added!</span></ng-template>
+      </div>
+    </div>
+  </div>
+</div>

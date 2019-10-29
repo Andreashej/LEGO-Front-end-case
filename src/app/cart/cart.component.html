@@ -1,0 +1,7 @@
+<div class="card" *ngIf="shoppinglist.hasItems()">
+  <div class="card-body text-right">
+    <h4 class="mb-0">Total</h4>
+    <div class="total">{{ shoppinglist.getCurrency() }} {{ shoppinglist.getTotal() }}</div>
+    <button class="btn btn-warning rounded-pill checkout">CHECKOUT <i class="fa fa-arrow-right"></i></button>
+  </div>
+</div>

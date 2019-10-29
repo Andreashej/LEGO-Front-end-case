@@ -1,0 +1,44 @@
+[
+    {
+        "SKU": "LEGO-0001",
+        "name": "LEGO House",
+        "price": "250",
+        "currency": "DKK",
+        "description": "It is a house made from LEGO with 1000 bricks."
+    },
+    {
+        "SKU": "LEGO-0002",
+        "name": "LEGO Car",
+        "price": "250",
+        "currency": "DKK",
+        "description": "It is a car made from LEGO with 500 bricks."
+    },
+    {
+        "SKU": "LEGO-0003",
+        "name": "LEGO Train",
+        "price": "375",
+        "currency": "DKK",
+        "description": "It is a train made from LEGO with 750 bricks."
+    },
+    {
+        "SKU": "LEGO-0004",
+        "name": "LEGO Ship",
+        "price": "425",
+        "currency": "DKK",
+        "description": "It is a ship made from LEGO with 135 bricks."
+    },
+    {
+        "SKU": "LEGO-0005",
+        "name": "LEGO Machine",
+        "price": "995",
+        "currency": "DKK",
+        "description": "It is a machine made from LEGO with 486 bricks."
+    },
+    {
+        "SKU": "LEGO-0006",
+        "name": "LEGO Tractor",
+        "price": "625",
+        "currency": "DKK",
+        "description": "It is a tractor made from LEGO with 900 bricks."
+    }
+]
