@@ -14,7 +14,7 @@ export class ProductComponent implements OnInit {
 
   inCart: boolean;
 
-  constructor(private shoppinglist: ShoppingListService) { }
+  constructor(public shoppinglist: ShoppingListService) { }
 
   ngOnInit() {
     this.inCart = this.shoppinglist.isInCart(this.product);

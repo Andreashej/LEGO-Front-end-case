@@ -8,7 +8,7 @@ import { ShoppingListService } from '../shopping-list.service';
 })
 export class CartComponent implements OnInit {
 
-  constructor(private shoppinglist: ShoppingListService) { }
+  constructor(public shoppinglist: ShoppingListService) { }
 
   ngOnInit() {
   }

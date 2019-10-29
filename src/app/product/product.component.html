@@ -10,7 +10,7 @@
         <h4>{{ product.currency }} {{ product.price }}</h4>
       </div>
       <div class="col text-right">
-        <button *ngIf="!this.shoppinglist.isInCart(product); else addedText"  class="btn btn-success rounded-pill" (click)="addToCart()">Add to cart</button>
+        <button *ngIf="!shoppinglist.isInCart(product); else addedText"  class="btn btn-success rounded-pill" (click)="addToCart()">Add to cart</button>
         <ng-template #addedText><span class="btn btn-success disabled rounded-pill">Added!</span></ng-template>
       </div>
     </div>

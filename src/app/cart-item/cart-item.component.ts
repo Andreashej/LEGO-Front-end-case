@@ -13,7 +13,7 @@ export class CartItemComponent implements OnInit {
 
   @Input() product;
 
-  constructor(private shoppinglist: ShoppingListService) { }
+  constructor(public shoppinglist: ShoppingListService) { }
 
 
   ngOnInit() {

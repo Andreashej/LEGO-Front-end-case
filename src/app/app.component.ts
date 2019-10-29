@@ -12,7 +12,7 @@ import { ShoppingListService } from './shopping-list.service';
 export class AppComponent implements OnInit {
   title = 'LegoCase';
 
-  constructor(private productService: ProductServiceService, private shoppingListService: ShoppingListService) { }
+  constructor(public productService: ProductServiceService, public shoppingListService: ShoppingListService) { }
 
   products$: Observable<Product[]>;
   shoppinglist: Product[];
